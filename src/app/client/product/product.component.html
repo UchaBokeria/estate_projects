@@ -1,0 +1,12 @@
+<p class="title">{{district}}</p>
+
+<div class="List-Container">
+    <div class="Products" *ngFor="let product of products">
+        <img [src]="product.src" [routerLink]="['/Detail', product.id]" alt="Product">
+        <p [routerLink]="['/Detail', product.id]"> {{product.name}} </p>
+    </div>
+</div>
+
+<div class="detail">
+    <router-outlet></router-outlet>
+</div>

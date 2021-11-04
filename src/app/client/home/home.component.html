@@ -1,0 +1,8 @@
+<p class="title">Districts</p>
+
+<div class="Product-Container">
+    <div class="Regions" *ngFor="let product of products">
+        <img [src]="product.src" [routerLink]="['/Product', product.name]" alt="Product">
+        <p [routerLink]="['/Product', product.name]"> {{product.name}} </p>
+    </div>
+</div>

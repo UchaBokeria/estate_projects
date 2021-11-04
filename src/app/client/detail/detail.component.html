@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="thmbnail"> 
+        <img [src]="product.src" alt="detail product"> 
+        <p> {{product.name}} </p>
+    </div>
+
+    <div class="Slider-Container">
+        <i class="material-icons left" (click)="slide(-1);">chevron_left</i>
+
+        <div *ngFor="let image of images;let i as index">
+            <img [src]="image.src" alt="img" *ngIf="image.id - 1 == slideIndex">
+        </div>
+
+        <i class="material-icons right" (click)="slide(1)">chevron_left</i>
+    </div>
+    
+    <div class="description"> {{product.description}} </div>
+</div>

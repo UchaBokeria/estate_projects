@@ -1,0 +1,37 @@
+i {
+    cursor:pointer;
+    font-size:2em;
+}
+p,i,b,h1, button {
+    user-select:none;
+}
+input, button, select, textarea {
+    box-sizing: border-box;
+    border:0;
+    background: rgb(223, 223, 223);
+    outline:0;
+    border-radius:3px;
+}
+input {
+    padding:2% 3%;
+    &::placeholder {
+        font-family: italic;
+        font-size:1.3em;
+    }
+}
+button {
+    
+    letter-spacing: 3px;
+    cursor:pointer;
+    padding:3%;
+    font-size:1.6em;
+}
+
+textarea {
+    padding:3%;
+    resize:none;
+}
+
+div {
+    box-sizing: border-box;
+}
